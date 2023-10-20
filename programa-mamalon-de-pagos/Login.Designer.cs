@@ -37,48 +37,54 @@
             // 
             // CONTRASEÑABOX
             // 
-            CONTRASEÑABOX.Location = new Point(303, 221);
+            CONTRASEÑABOX.Location = new Point(308, 214);
             CONTRASEÑABOX.Name = "CONTRASEÑABOX";
-            CONTRASEÑABOX.Size = new Size(168, 27);
+            CONTRASEÑABOX.Size = new Size(224, 27);
             CONTRASEÑABOX.TabIndex = 0;
             CONTRASEÑABOX.TextChanged += textBox1_TextChanged;
             // 
             // BONTONINGRESO
             // 
-            BONTONINGRESO.Location = new Point(316, 307);
+            BONTONINGRESO.BackColor = SystemColors.Highlight;
+            BONTONINGRESO.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            BONTONINGRESO.ForeColor = SystemColors.ButtonFace;
+            BONTONINGRESO.Location = new Point(353, 267);
             BONTONINGRESO.Name = "BONTONINGRESO";
             BONTONINGRESO.Size = new Size(134, 47);
             BONTONINGRESO.TabIndex = 1;
             BONTONINGRESO.Text = "INGRESAR";
-            BONTONINGRESO.UseVisualStyleBackColor = true;
+            BONTONINGRESO.UseVisualStyleBackColor = false;
             BONTONINGRESO.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(293, 185);
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(316, 159);
             label1.Name = "label1";
-            label1.Size = new Size(188, 20);
+            label1.Size = new Size(204, 38);
             label1.TabIndex = 2;
-            label1.Text = "INGRESE SU CONTRASEÑA";
+            label1.Text = "CONTRASEÑA";
             label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(316, 48);
+            label2.Location = new Point(353, 44);
             label2.Name = "label2";
-            label2.Size = new Size(165, 20);
+            label2.Size = new Size(140, 38);
             label2.TabIndex = 3;
-            label2.Text = "INGRESE SU USUARIO";
+            label2.Text = "USUARIO";
+            label2.Click += label2_Click;
             // 
             // USERBOX
             // 
-            USERBOX.Location = new Point(303, 144);
+            USERBOX.Location = new Point(308, 92);
             USERBOX.Name = "USERBOX";
-            USERBOX.Size = new Size(176, 27);
+            USERBOX.Size = new Size(212, 27);
             USERBOX.TabIndex = 4;
             USERBOX.TextChanged += USERBOX_TextChanged;
             // 

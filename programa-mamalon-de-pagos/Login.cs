@@ -31,5 +31,10 @@ namespace programa_mamalon_de_pagos
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
