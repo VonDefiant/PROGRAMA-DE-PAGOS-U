@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             CONTRASEÑABOX = new TextBox();
             BONTONINGRESO = new Button();
             label1 = new Label();
@@ -99,6 +100,7 @@
             Controls.Add(label1);
             Controls.Add(BONTONINGRESO);
             Controls.Add(CONTRASEÑABOX);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Login";
             Text = "LOGIN";
             Load += Login_Load;
