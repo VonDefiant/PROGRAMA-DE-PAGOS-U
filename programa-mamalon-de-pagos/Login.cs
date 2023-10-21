@@ -1,3 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+
 namespace programa_mamalon_de_pagos
 {
     public partial class Login : Form
@@ -33,6 +43,11 @@ namespace programa_mamalon_de_pagos
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
