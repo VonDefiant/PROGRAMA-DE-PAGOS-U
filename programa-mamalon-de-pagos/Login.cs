@@ -47,7 +47,7 @@ namespace programa_mamalon_de_pagos
                 }
                 else
                 {
-                    MessageBox.Show("Acceso Denegado", "Algo has ingresado mal");
+                    MessageBox.Show("Acceso Denegado","Error");
                 }
 
             }
