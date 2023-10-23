@@ -24,7 +24,33 @@ namespace programa_mamalon_de_pagos
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (USERBOX.Text.Trim() == "" && CONTRASEÑABOX.Text.Trim() == "")
+            {
+                MessageBox.Show("Empty Fields", "Error");
+            }
+            else
+            {
+                string query = "SELECT * FROM Usuarios WHERE Usuario= @user AND Contraseña = @pass";
+                SQLiteConnection conn = new SQLiteConnection("Data Source=BACKEND/EXACTUS.db;Version=3;");
+                conn.Open();
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                cmd.Parameters.AddWithValue("@user", USERBOX.Text);
+                cmd.Parameters.AddWithValue("@pass", CONTRASEÑABOX.Text);
+                SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
 
+
+                if (dt.Rows.Count > 0)
+                {
+                    MessageBox.Show(" Te has logueado", "Acceso Correcto");
+                }
+                else
+                {
+                    MessageBox.Show("Acceso Denegado", "Algo has ingresado mal");
+                }
+
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

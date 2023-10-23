@@ -37,6 +37,7 @@
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // CONTRASEÑABOX
@@ -52,7 +53,7 @@
             BONTONINGRESO.BackColor = SystemColors.Highlight;
             BONTONINGRESO.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             BONTONINGRESO.ForeColor = SystemColors.ButtonFace;
-            BONTONINGRESO.Location = new Point(346, 355);
+            BONTONINGRESO.Location = new Point(345, 358);
             BONTONINGRESO.Name = "BONTONINGRESO";
             BONTONINGRESO.Size = new Size(134, 47);
             BONTONINGRESO.TabIndex = 1;
@@ -107,6 +108,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(BONTONINGRESO);
             panel1.Location = new Point(1, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(802, 449);
@@ -122,7 +124,6 @@
             Controls.Add(USERBOX);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(BONTONINGRESO);
             Controls.Add(CONTRASEÑABOX);
             Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -130,6 +131,7 @@
             Text = "LOGIN";
             Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
