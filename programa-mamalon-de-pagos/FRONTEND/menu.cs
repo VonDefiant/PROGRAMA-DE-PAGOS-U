@@ -16,5 +16,10 @@ namespace programa_mamalon_de_pagos.FRONTEND
         {
             InitializeComponent();
         }
+
+        private void menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

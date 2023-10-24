@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using programa_mamalon_de_pagos.FRONTEND;
 
 namespace programa_mamalon_de_pagos
 {
@@ -43,11 +44,16 @@ namespace programa_mamalon_de_pagos
 
                 if (dt.Rows.Count > 0)
                 {
-                    MessageBox.Show(" Te has logueado", "Acceso Correcto");
+                    MessageBox.Show("Has iniciado sesión", "Acceso Correcto");
+                    menu frmmenu = new menu();
+                    this.Hide();
+                    frmmenu.Show();
+
                 }
+                a
                 else
                 {
-                    MessageBox.Show("Acceso Denegado","error");
+                    MessageBox.Show("Acceso Denegado", "error");
                 }
 
             }
