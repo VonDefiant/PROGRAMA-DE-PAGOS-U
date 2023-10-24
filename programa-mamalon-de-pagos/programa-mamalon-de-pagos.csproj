@@ -7,10 +7,14 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>FRONTEND\iconos\appicon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="FRONTEND\iconos\" />
+    <Content Include="FRONTEND\iconos\appicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="FRONTEND\imagenes\" />
   </ItemGroup>
 
@@ -31,6 +35,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -49,6 +58,10 @@
     </None>
     <None Update="BACKEND\SQLite.Interop.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
