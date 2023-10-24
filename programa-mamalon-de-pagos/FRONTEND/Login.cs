@@ -50,7 +50,7 @@ namespace programa_mamalon_de_pagos
                     frmmenu.Show();
 
                 }
-                a
+                
                 else
                 {
                     MessageBox.Show("Acceso Denegado", "error");
