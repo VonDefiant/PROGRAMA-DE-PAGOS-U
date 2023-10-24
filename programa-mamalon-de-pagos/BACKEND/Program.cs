@@ -1,4 +1,4 @@
-namespace programa_mamalon_de_pagos
+namespace programa_mamalon_de_pagos.BACKEND
 {
     internal static class Program
     {
