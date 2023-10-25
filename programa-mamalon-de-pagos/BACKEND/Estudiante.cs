@@ -29,11 +29,6 @@ namespace programa_mamalon_de_pagos
             Telefono = telefono;
         }
 
-        // Método para retornar la info
-        public string ObtenerInformacion()
-        {
-            return $"ID: {IDEstudiante}, Nombre: {Nombre} {Apellido},Carrera o grado:{CarreraGrado} ,Seccion: {Seccion}, Correo Electrónico: {CorreoElectronico}, Teléfono: {Telefono}";
-        }
 
         //Metodo para actualizar la info
         public void ActualizarInformacion(string nuevoNombre, string nuevoApellido, string nuevaCarreraGrado, string nuevaSeccion, string nuevoCorreo, string nuevoTelefono)
