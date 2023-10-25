@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using programa_mamalon_de_pagos.BACKEND;
 
 namespace programa_mamalon_de_pagos
 {
@@ -17,9 +18,11 @@ namespace programa_mamalon_de_pagos
         public string CorreoElectronico { get; set; }
         public string Telefono { get; set; }
         public string? Jornada { get; set; }
+        public Institucion Institucion { get; set; }
+        public Facultades Facultad { get; set; }
 
         // Constructor
-        public Estudiante(int carnet, string nombreCompleto, DateTime fechaDeNacimiento, string carreragrado, string seccion, string correoElectronico, string telefono, string jornada)
+        public Estudiante(int carnet, string nombreCompleto, DateTime fechaDeNacimiento, string carreragrado, string seccion, string correoElectronico, string telefono, string jornada, Institucion insitucion, Facultades facultad)
         {
             Carnet = carnet;
             NombreCompleto = nombreCompleto;
@@ -29,6 +32,8 @@ namespace programa_mamalon_de_pagos
             CorreoElectronico = correoElectronico;
             Telefono = telefono;
             Jornada = jornada;
+            Institucion = insitucion;
+            Facultad = facultad;
         }
         //Metodo para actualizar la info
         public void ActualizarInformacion(string nuevoNombre, string nuevoApellido,DateTime nuevaFechaDeNacimiento, string nuevaCarreraGrado, string nuevaSeccion, string nuevoCorreo, string nuevoTelefono, string nuevaJornada)

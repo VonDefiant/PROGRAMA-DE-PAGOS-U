@@ -10,19 +10,17 @@ namespace programa_mamalon_de_pagos.BACKEND
     {
         // Propiedades
         public int IDProfesor { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
+        public string NombreCompleto { get; set; }
         public string Direccion { get; set; }
         public string CorreoElectronico { get; set; }
         public string Telefono { get; set; }
         public List<string> Asignaturas { get; set; }
 
         // Constructor
-        public Profesor(int idProfesor, string nombre, string apellido, string direccion, string correoElectronico, string telefono)
+        public Profesor(int idProfesor, string nombreCompleto, string direccion, string correoElectronico, string telefono)
         {
             IDProfesor = idProfesor;
-            Nombre = nombre;
-            Apellido = apellido;
+            NombreCompleto = nombreCompleto;
             Direccion = direccion;
             CorreoElectronico = correoElectronico;
             Telefono = telefono;
@@ -43,8 +41,7 @@ namespace programa_mamalon_de_pagos.BACKEND
         // Método para actualizar información del profesor
         public void ActualizarInformacion(string nuevoNombre, string nuevoApellido, string nuevaDireccion, string nuevoCorreo, string nuevoTelefono)
         {
-            Nombre = nuevoNombre;
-            Apellido = nuevoApellido;
+            NombreCompleto = nuevoNombre;;
             Direccion = nuevaDireccion;
             CorreoElectronico = nuevoCorreo;
             Telefono = nuevoTelefono;
