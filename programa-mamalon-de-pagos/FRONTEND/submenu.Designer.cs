@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(submenu));
             label6 = new Label();
             label5 = new Label();
@@ -37,6 +38,7 @@
             INSITUCIONCONSULTABT = new Button();
             label2 = new Label();
             PAGOSCONSULTABT = new Button();
+            imageList1 = new ImageList(components);
             SuspendLayout();
             // 
             // label6
@@ -142,6 +144,12 @@
             PAGOSCONSULTABT.UseVisualStyleBackColor = true;
             PAGOSCONSULTABT.UseWaitCursor = true;
             // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth8Bit;
+            imageList1.ImageSize = new Size(16, 16);
+            imageList1.TransparentColor = Color.Transparent;
+            // 
             // submenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -174,5 +182,6 @@
         private Button INSITUCIONCONSULTABT;
         private Label label2;
         private Button PAGOSCONSULTABT;
+        private ImageList imageList1;
     }
 }
