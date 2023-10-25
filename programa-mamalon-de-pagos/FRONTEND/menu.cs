@@ -49,5 +49,13 @@ namespace programa_mamalon_de_pagos.FRONTEND
         {
 
         }
+
+
+        private void CONSULTASBT_Click_1(object sender, EventArgs e)
+        {
+            submenu frmconsutalaumno = new submenu();
+            this.Hide();
+            frmconsutalaumno.Show();
+        }
     }
 }
