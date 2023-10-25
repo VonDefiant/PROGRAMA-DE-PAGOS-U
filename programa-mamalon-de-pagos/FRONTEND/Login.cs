@@ -27,7 +27,7 @@ namespace programa_mamalon_de_pagos
         {
             if (USERBOX.Text.Trim() == "" && CONTRASEÑABOX.Text.Trim() == "")
             {
-                MessageBox.Show("Empty Fields", "Error");
+                MessageBox.Show("No has escrito nada", "Error");
             }
             else
             {
