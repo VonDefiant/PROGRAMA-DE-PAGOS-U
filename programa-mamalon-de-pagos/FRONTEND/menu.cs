@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace programa_mamalon_de_pagos.FRONTEND
 {
     public partial class menu : Form
@@ -56,6 +57,12 @@ namespace programa_mamalon_de_pagos.FRONTEND
             submenu frmconsutalaumno = new submenu();
             this.Hide();
             frmconsutalaumno.Show();
+        }
+
+        private void insititutonbtm_Click(object sender, EventArgs e)
+        {
+            SecondMenu formularioSecondMenu = new SecondMenu(SecondMenu.ContextoMenu.Institucion);
+            formularioSecondMenu.Show();
         }
     }
 }

@@ -67,6 +67,7 @@
             insititutonbtm.TextAlign = ContentAlignment.BottomCenter;
             insititutonbtm.TextImageRelation = TextImageRelation.ImageAboveText;
             insititutonbtm.UseVisualStyleBackColor = true;
+            insititutonbtm.Click += insititutonbtm_Click;
             // 
             // button2
             // 
