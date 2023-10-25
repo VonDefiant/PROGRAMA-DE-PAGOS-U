@@ -42,6 +42,8 @@
             // 
             // CONTRASEÑABOX
             // 
+            CONTRASEÑABOX = new TextBox();
+            CONTRASEÑABOX.PasswordChar = '*';
             CONTRASEÑABOX.Location = new Point(301, 297);
             CONTRASEÑABOX.Name = "CONTRASEÑABOX";
             CONTRASEÑABOX.Size = new Size(224, 27);
