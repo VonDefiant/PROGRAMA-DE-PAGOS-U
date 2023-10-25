@@ -83,12 +83,12 @@ namespace programa_mamalon_de_pagos.FRONTEND
             string telefono = telefonoalumno.Text;
             string jornada = textBox3.Text;
             string institucion = INSTITUCION.Text;
+            string facultad = FACULTAD.Text;
 
-            // Genera el número de carnet automáticamente (puedes personalizar la lógica)
             string carnet = GenerarNumeroCarnet();
 
             // Crea una instancia de Estudiante
-            Estudiante nuevoEstudiante = new Estudiante(carnet, nombreCompleto, fechaNacimiento, carrera, seccion, correoElectronico, telefono, jornada, institucion);
+            Estudiante nuevoEstudiante = new Estudiante(carnet, nombreCompleto, fechaNacimiento, carrera, seccion, correoElectronico, telefono, jornada, institucion, facultad);
 
 
             try
@@ -96,7 +96,6 @@ namespace programa_mamalon_de_pagos.FRONTEND
                 // Llama a la función para insertar el estudiante en la base de datos
                 EstudianteDAO.InsertarEstudiante(nuevoEstudiante);
 
-                // Puedes mostrar un mensaje de confirmación o realizar otras acciones después de guardar el estudiante
                 MessageBox.Show("Estudiante guardado con éxito.");
             }
             catch (Exception ex)
@@ -106,8 +105,7 @@ namespace programa_mamalon_de_pagos.FRONTEND
         }
         private string GenerarNumeroCarnet()
         {
-            // Puedes personalizar la lógica para generar el número de carnet automáticamente
-            // Aquí se muestra un ejemplo simple:
+
             Random random = new Random();
             string carnet = random.Next(1000, 9999).ToString() + "-" + random.Next(10, 99).ToString() + "-" + random.Next(1000, 9999).ToString();
             return carnet;
