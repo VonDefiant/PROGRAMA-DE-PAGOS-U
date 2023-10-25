@@ -19,7 +19,7 @@ public class EstudianteDAO
         {
             connection.Open();
 
-            // Verifica si el carnet ya existe antes de insertar
+            // Verifica si el carnet ya existe antes de insertar.
             if (!ExisteCarnet(estudiante.Carnet))
             {
                 string query = "INSERT INTO Estudiantes (Carnet, NombreCompleto, FechaDeNacimiento, CarreraGrado, Seccion, CorreoElectronico, Telefono, Jornada,Institucion,Facultad ) " +
