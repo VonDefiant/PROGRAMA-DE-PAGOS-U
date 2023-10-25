@@ -20,5 +20,10 @@ namespace programa_mamalon_de_pagos.BACKEND
             Nombre = nombre;
             Institucion = institucion;
         }
+
+        public static implicit operator Facultades(string v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

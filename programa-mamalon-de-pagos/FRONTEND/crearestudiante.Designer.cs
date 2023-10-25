@@ -155,7 +155,7 @@
             // 
             // SAVEBUTTON
             // 
-            SAVEBUTTON.BackgroundImage = Properties.Resources.salvar;
+            //=======================>>SAVEBUTTON.BackgroundImage = Properties.Resources.salvar;
             SAVEBUTTON.BackgroundImageLayout = ImageLayout.Zoom;
             SAVEBUTTON.ForeColor = SystemColors.ButtonHighlight;
             SAVEBUTTON.Location = new Point(309, 210);

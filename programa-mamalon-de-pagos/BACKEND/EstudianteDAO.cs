@@ -22,7 +22,7 @@ public class EstudianteDAO
             // Verifica si el carnet ya existe antes de insertar
             if (!ExisteCarnet(estudiante.Carnet))
             {
-                string query = "INSERT INTO Estudiantes (Carnet, Nombre, FechaDeNacimiento, CarreraGrado, Seccion, CorreoElectronico, Telefono, Jornada,Institucion,Facultad ) " +
+                string query = "INSERT INTO Estudiantes (Carnet, NombreCompleto, FechaDeNacimiento, CarreraGrado, Seccion, CorreoElectronico, Telefono, Jornada,Institucion,Facultad ) " +
                                "VALUES (@Carnet, @NombreCompleto, @FechaDeNacimiento, @CarreraGrado, @Seccion, @CorreoElectronico, @Telefono, @Jornada,@Institucion, @Facultad)";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
