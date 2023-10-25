@@ -37,15 +37,16 @@
             INSITUCIONCONSULTABT = new Button();
             label2 = new Label();
             PAGOSCONSULTABT = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(91, 164);
+            label6.Location = new Point(104, 219);
             label6.Name = "label6";
-            label6.Size = new Size(63, 15);
+            label6.Size = new Size(81, 20);
             label6.TabIndex = 35;
             label6.Text = "AGREGAR";
             // 
@@ -53,9 +54,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(282, 164);
+            label5.Location = new Point(322, 219);
             label5.Name = "label5";
-            label5.Size = new Size(73, 15);
+            label5.Size = new Size(93, 20);
             label5.TabIndex = 34;
             label5.Text = "MODIFICAR";
             // 
@@ -63,9 +64,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(96, 314);
+            label1.Location = new Point(110, 419);
             label1.Name = "label1";
-            label1.Size = new Size(86, 15);
+            label1.Size = new Size(109, 20);
             label1.TabIndex = 33;
             label1.Text = "ESTUDIANTES";
             // 
@@ -75,10 +76,9 @@
             ESTUDIANTEBT.BackgroundImageLayout = ImageLayout.Zoom;
             ESTUDIANTEBT.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             ESTUDIANTEBT.ForeColor = SystemColors.ButtonFace;
-            ESTUDIANTEBT.Location = new Point(59, 204);
-            ESTUDIANTEBT.Margin = new Padding(3, 2, 3, 2);
+            ESTUDIANTEBT.Location = new Point(67, 272);
             ESTUDIANTEBT.Name = "ESTUDIANTEBT";
-            ESTUDIANTEBT.Size = new Size(144, 108);
+            ESTUDIANTEBT.Size = new Size(165, 144);
             ESTUDIANTEBT.TabIndex = 32;
             ESTUDIANTEBT.TextAlign = ContentAlignment.BottomCenter;
             ESTUDIANTEBT.UseVisualStyleBackColor = true;
@@ -91,10 +91,9 @@
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Strikeout, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ButtonHighlight;
             button2.ImageAlign = ContentAlignment.BottomCenter;
-            button2.Location = new Point(242, 54);
-            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Location = new Point(277, 72);
             button2.Name = "button2";
-            button2.Size = new Size(144, 108);
+            button2.Size = new Size(165, 144);
             button2.TabIndex = 31;
             button2.TextAlign = ContentAlignment.BottomCenter;
             button2.UseVisualStyleBackColor = true;
@@ -107,10 +106,9 @@
             INSITUCIONCONSULTABT.FlatAppearance.BorderSize = 14;
             INSITUCIONCONSULTABT.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             INSITUCIONCONSULTABT.ForeColor = SystemColors.ButtonFace;
-            INSITUCIONCONSULTABT.Location = new Point(59, 54);
-            INSITUCIONCONSULTABT.Margin = new Padding(3, 2, 3, 2);
+            INSITUCIONCONSULTABT.Location = new Point(67, 72);
             INSITUCIONCONSULTABT.Name = "INSITUCIONCONSULTABT";
-            INSITUCIONCONSULTABT.Size = new Size(141, 108);
+            INSITUCIONCONSULTABT.Size = new Size(161, 144);
             INSITUCIONCONSULTABT.TabIndex = 30;
             INSITUCIONCONSULTABT.TextAlign = ContentAlignment.BottomCenter;
             INSITUCIONCONSULTABT.TextImageRelation = TextImageRelation.ImageAboveText;
@@ -121,9 +119,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(268, 314);
+            label2.Location = new Point(306, 419);
             label2.Name = "label2";
-            label2.Size = new Size(109, 15);
+            label2.Size = new Size(138, 20);
             label2.TabIndex = 37;
             label2.Text = "RECIBOS DE PAGO";
             // 
@@ -133,21 +131,31 @@
             PAGOSCONSULTABT.BackgroundImageLayout = ImageLayout.Zoom;
             PAGOSCONSULTABT.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             PAGOSCONSULTABT.ForeColor = SystemColors.ButtonFace;
-            PAGOSCONSULTABT.Location = new Point(242, 204);
-            PAGOSCONSULTABT.Margin = new Padding(3, 2, 3, 2);
+            PAGOSCONSULTABT.Location = new Point(277, 272);
             PAGOSCONSULTABT.Name = "PAGOSCONSULTABT";
-            PAGOSCONSULTABT.Size = new Size(144, 108);
+            PAGOSCONSULTABT.Size = new Size(165, 144);
             PAGOSCONSULTABT.TabIndex = 36;
             PAGOSCONSULTABT.TextAlign = ContentAlignment.BottomCenter;
             PAGOSCONSULTABT.UseVisualStyleBackColor = true;
             PAGOSCONSULTABT.UseWaitCursor = true;
             // 
+            // button1
+            // 
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 38;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // submenu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Wheat;
-            ClientSize = new Size(423, 351);
+            ClientSize = new Size(483, 468);
+            Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(PAGOSCONSULTABT);
             Controls.Add(label6);
@@ -157,6 +165,7 @@
             Controls.Add(button2);
             Controls.Add(INSITUCIONCONSULTABT);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             Name = "submenu";
             Text = "Consultas";
             Load += submenu_Load;
@@ -174,5 +183,6 @@
         private Button INSITUCIONCONSULTABT;
         private Label label2;
         private Button PAGOSCONSULTABT;
+        private Button button1;
     }
 }

@@ -3,49 +3,48 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using programa_mamalon_de_pagos.BACKEND;
 
 namespace programa_mamalon_de_pagos
 {
     public class Estudiante
     {
         // Propiedades(Puede que falte alguna, pero estas serian las mas importantes)
-        public int IDEstudiante { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
+        public int Carnet { get; set; }
+        public string NombreCompleto { get; set; }
+        public DateTime FechaDeNacimiento { get; set; }
         public string CarreraGrado { get; set; }
         public string Seccion { get; set; }
         public string CorreoElectronico { get; set; }
         public string Telefono { get; set; }
+        public string? Jornada { get; set; }
+        public string Institucion { get; set; }
+        public Facultades Facultad { get; set; }
 
         // Constructor
-        public Estudiante(int idEstudiante, string nombre, string apellido, string carreragrado, string seccion, string correoElectronico, string telefono)
+        public Estudiante(int carnet, string nombreCompleto, DateTime fechaDeNacimiento, string carreragrado, string seccion, string correoElectronico, string telefono, string jornada, string insitucion, Facultades facultad)
         {
-            IDEstudiante = idEstudiante;
-            Nombre = nombre;
-            Apellido = apellido;
+            Carnet = carnet;
+            NombreCompleto = nombreCompleto;
+            FechaDeNacimiento = fechaDeNacimiento;
             CarreraGrado = carreragrado;
             Seccion = seccion;
             CorreoElectronico = correoElectronico;
             Telefono = telefono;
+            Jornada = jornada;
+            Institucion = insitucion;
+            Facultad = facultad;
         }
-
-
         //Metodo para actualizar la info
-        public void ActualizarInformacion(string nuevoNombre, string nuevoApellido, string nuevaCarreraGrado, string nuevaSeccion, string nuevoCorreo, string nuevoTelefono)
+        public void ActualizarInformacion(string nuevoNombre, string nuevoApellido, DateTime nuevaFechaDeNacimiento, string nuevaCarreraGrado, string nuevaSeccion, string nuevoCorreo, string nuevoTelefono, string nuevaJornada)
         {
-            Nombre = nuevoNombre;
-            Apellido = nuevoApellido;
+            NombreCompleto = nuevoNombre;
+            FechaDeNacimiento = nuevaFechaDeNacimiento;
             CarreraGrado = nuevaCarreraGrado;
             Seccion = nuevaSeccion;
             CorreoElectronico = nuevoCorreo;
             Telefono = nuevoTelefono;
-        }
-
-        //Metodo para eliminar al estudiante(va relacionada con la base de datos)
-        public void EliminarEstudiante()
-        {
-            // Implementa la lógica para eliminar un estudiante de la base de datos.
-            // Eje: BaseDeDatos.EliminarEstudiante(IDEstudiante);
+            Jornada = nuevaJornada;
         }
     }
 

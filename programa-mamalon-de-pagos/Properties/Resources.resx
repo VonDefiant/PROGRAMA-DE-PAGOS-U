@@ -121,26 +121,26 @@
   <data name="facultad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\FRONTEND\imagenes\facultad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imagenlogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\FRONTEND\iconos\imagenlogin.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jornada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\imagenes\jornada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="estudiante" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\FRONTEND\imagenes\estudiante.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\FRONTEND\imagenes\profesor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="recibo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\FRONTEND\imagenes\recibo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jornada" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\FRONTEND\imagenes\jornada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\imagenes\profesor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\imagenes\reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="institucion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\FRONTEND\imagenes\institucion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\FRONTEND\imagenes\reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imagenlogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\iconos\imagenlogin.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tiempo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\FRONTEND\imagenes\tiempo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -153,5 +153,8 @@
   </data>
   <data name="ALUMNO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\FRONTEND\imagenes\ALUMNO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salvar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FRONTEND\imagenes\salvar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

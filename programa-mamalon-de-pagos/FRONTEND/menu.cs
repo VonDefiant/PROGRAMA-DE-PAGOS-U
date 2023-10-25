@@ -19,7 +19,9 @@ namespace programa_mamalon_de_pagos.FRONTEND
 
         private void menu_Load(object sender, EventArgs e)
         {
-
+            crearestudiante frmcrearestudiante = new crearestudiante();
+            this.Hide();
+            frmcrearestudiante.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -53,9 +55,19 @@ namespace programa_mamalon_de_pagos.FRONTEND
 
         private void CONSULTASBT_Click_1(object sender, EventArgs e)
         {
-            submenu frmconsutalaumno = new submenu();
+            submenu frmsubmenu = new submenu();
             this.Hide();
-            frmconsutalaumno.Show();
+            frmsubmenu.Show();
+        }
+
+        private void insititutonbtm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PERIODOBT_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -33,5 +33,10 @@ namespace programa_mamalon_de_pagos.FRONTEND
             this.Hide();
             frmconsutalaumno.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
