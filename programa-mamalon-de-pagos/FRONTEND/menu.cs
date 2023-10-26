@@ -33,7 +33,11 @@ namespace programa_mamalon_de_pagos.FRONTEND
 
         private void button3_Click(object sender, EventArgs e)
         {
+            crearestudiante frmcrearestudiante = new crearestudiante();
+            this.Hide();
+            frmcrearestudiante.Show();
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
