@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using programa_mamalon_de_pagos.BACKEND;
 
 namespace programa_mamalon_de_pagos.FRONTEND
 {
@@ -70,8 +71,8 @@ namespace programa_mamalon_de_pagos.FRONTEND
         {
             // Recopila los datos del formulario
             string nombreCompleto = nombreestuadiante.Text;
-            DateTime fechaNacimiento;
-            if (!DateTime.TryParse(NACIMIENTOESTUDIANTE.Text, out fechaNacimiento))
+            DateTime fechaDeNacimiento;
+            if (!DateTime.TryParse(NACIMIENTOESTUDIANTE.Text, out fechaDeNacimiento))
             {
                 MessageBox.Show("Fecha de nacimiento no válida.");
                 return;
@@ -85,10 +86,12 @@ namespace programa_mamalon_de_pagos.FRONTEND
             string institucion = INSTITUCION.Text;
             string facultad = FACULTAD.Text;
 
-            string carnet = GenerarNumeroCarnet();
+            // Genera el número de carnet automáticamente (puedes personalizar la lógica)
+            int carnet = int.Parse(GenerarNumeroCarnet());
 
             // Crea una instancia de Estudiante
-            Estudiante nuevoEstudiante = new Estudiante(carnet, nombreCompleto, fechaNacimiento, carrera, seccion, correoElectronico, telefono, jornada, institucion, facultad);
+            Estudiante nuevoEstudiante = new Estudiante(carnet, nombreCompleto, fechaDeNacimiento, carrera, seccion, correoElectronico, telefono, jornada, institucion, facultad);
+
 
 
             try

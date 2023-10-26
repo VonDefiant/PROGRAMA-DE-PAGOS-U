@@ -22,7 +22,7 @@ namespace programa_mamalon_de_pagos
         public Facultades Facultad { get; set; }
 
         // Constructor
-        public Estudiante(int carnet, string nombreCompleto, DateTime fechaDeNacimiento, string carreragrado, string seccion, string correoElectronico, string telefono, string jornada, string insitucion, Facultades facultad)
+        public Estudiante(int carnet, string nombreCompleto, DateTime fechaDeNacimiento, string carreragrado, string seccion, string correoElectronico, string telefono, string jornada, string institucion, Facultades facultad)
         {
             Carnet = carnet;
             NombreCompleto = nombreCompleto;
@@ -32,11 +32,11 @@ namespace programa_mamalon_de_pagos
             CorreoElectronico = correoElectronico;
             Telefono = telefono;
             Jornada = jornada;
-            Institucion = insitucion;
+            Institucion = institucion;
             Facultad = facultad;
         }
         //Metodo para actualizar la info
-        public void ActualizarInformacion(string nuevoNombre, string nuevoApellido, DateTime nuevaFechaDeNacimiento, string nuevaCarreraGrado, string nuevaSeccion, string nuevoCorreo, string nuevoTelefono, string nuevaJornada)
+        public void ActualizarInformacion(string nuevoNombre, DateTime nuevaFechaDeNacimiento, string nuevaCarreraGrado, string nuevaSeccion, string nuevoCorreo, string nuevoTelefono, string nuevaJornada, string nuevaFacultad)
         {
             NombreCompleto = nuevoNombre;
             FechaDeNacimiento = nuevaFechaDeNacimiento;
@@ -45,6 +45,7 @@ namespace programa_mamalon_de_pagos
             CorreoElectronico = nuevoCorreo;
             Telefono = nuevoTelefono;
             Jornada = nuevaJornada;
+            Facultad = nuevaFacultad;
         }
     }
 
